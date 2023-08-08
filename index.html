@@ -14,18 +14,21 @@
 
     <title>Frontend Mentor | Order summary card</title>
 
+    <link rel="stylesheet" href="animations.css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <main class="card">
+    <main class="card animate slideFromBottom">
       <img src="images/illustration-hero.svg" alt="hero" class="hero" />
       <section class="info">
-        <h1>Order Summary</h1>
-        <p>
+        <h1 class="animate animate--delay-5ms slideFromBottom">
+          Order Summary
+        </h1>
+        <p class="animate animate--delay-8ms slideFromBottom">
           You can now listen to millions of songs audiobooks, and podcasts on
           any device anywhere you link!
         </p>
-        <article>
+        <article class="animate animate--delay-1s slideFromBottom">
           <span class="wrapper">
             <img src="images/icon-music.svg" alt="headphone" />
             <span class="inner-wrapper">
@@ -35,8 +38,12 @@
           </span>
           <a href="#"> Change </a>
         </article>
-        <button class="btn-payment">Proceed to Payment</button>
-        <button class="btn-cancel">Cancel Order</button>
+        <button class="btn-payment animate animate--delay-2s slideFromLeft">
+          Proceed to Payment
+        </button>
+        <button class="btn-cancel animate animate--delay-2s slideFromBottom">
+          Cancel Order
+        </button>
       </section>
     </main>
   </body>
